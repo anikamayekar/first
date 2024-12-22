@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Sitara's World!</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(to bottom, #ffefef, #ffc3d9);
+            color: #555;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #ffe4e1;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            color: #ff69b4;
+            font-size: 3.5rem;
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 1.3rem;
+            margin: 5px 0;
+        }
+
+        .moving-text {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #ff69b4;
+            font-weight: bold;
+            animation: scrollText 10s linear infinite;
+        }
+
+        @keyframes scrollText {
+            0% {transform: translateX(100%);}
+            100% {transform: translateX(-100%);}
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav button:hover {
+            background-color: #ff1493;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 15px;
+            text-align: center;
+            width: 300px;
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            color: #fa8072;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1.1rem;
+            color: #666;
+            margin: 0;
+        }
+
+        .final-section {
+            text-align: center;
+            background-color: #ffe4e1;
+            padding: 30px;
+            font-family: 'Georgia', serif;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .final-section h2 {
+            font-size: 2.5rem;
+            color: #ff69b4;
+            margin-bottom: 20px;
+        }
+
+        .final-section p {
+            font-size: 1.5rem;
+            color: #444;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #ffe4e1;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            color: #ff69b4;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Sitara's World! 🌟</h1>
+        <p>Your daily dose of cuteness overload 💖</p>
+    </div>
+    <div class="moving-text">Princess Situ 👑</div>
+    <nav>
+        <button onclick="scrollToSection('event1')">I Stepped on Earth</button>
+        <button onclick="scrollToSection('event2')">Sleeping Happily</button>
+        <button onclick="scrollToSection('event3')">10 Days Old</button>
+        <button onclick="scrollToSection('event4')">1 Month Old</button>
+        <button onclick="scrollToSection('event5')">2 Months Old</button>
+        <button onclick="scrollToSection('event6')">Eating Maggie Noodles</button>
+        <button onclick="scrollToSection('event7')">Navratri</button>
+        <button onclick="scrollToSection('event8')">First Wedding</button>
+        <button onclick="scrollToSection('event9')">First Time on Airplane</button>
+        <button onclick="scrollToSection('event10')">First Clicking Selfie</button>
+        <button onclick="scrollToSection('event11')">Reading Book</button>
+        <button onclick="scrollToSection('event12')">Wearing Hairband</button>
+        <button onclick="scrollToSection('event13')">Lavender Dress</button>
+    </nav>
+    <div class="content">
+        <div class="card" id="event1">
+            <img src="img/1.jpeg" alt="I stepped on earth">
+            <h2>I Stepped on Earth 🌍</h2>
+            <p>The world became brighter on the day I arrived!</p>
+        </div>
+        <div class="card" id="event2">
+            <img src="img/3.jpeg" alt="Sleeping Happily">
+            <h2>Sleeping Happily 😴</h2>
+            <p>Dreaming of rainbows and cuddles.</p>
+        </div>
+        <div class="card" id="event3">
+            <img src="img/2.jpeg" alt="10 Days Old">
+            <h2>10 Days Old 🎉</h2>
+            <p>Already stealing hearts at just 10 days!</p>
+        </div>
+        <div class="card" id="event4">
+            <img src="img/4.jpeg" alt="1 Month Old">
+            <h2>1 Month Old 🍼</h2>
+            <p>Growing cuter every single day.</p>
+        </div>
+        <div class="card" id="event5">
+            <img src="img/5.jpeg" alt="2 Months Old">
+            <h2>2 Months Old 🥰</h2>
+            <p>Making everyone smile with my giggles.</p>
+        </div>
+        <div class="card" id="event6">
+            <img src="img/noodles.jpeg" alt="Eating Maggie Noodles">
+            <h2>Eating Maggie Noodles 🍜</h2>
+            <p>My first taste adventure was delicious!</p>
+        </div>
+        <div class="card" id="event7">
+            <img src="img/nav.jpeg" alt="Navratri">
+            <h2>Navratri 🕺💃</h2>
+            <p>All dressed up for the festival vibes.</p>
+        </div>
+        <div class="card" id="event8">
+            <img src="img/wedding.jpeg" alt="First Wedding">
+            <h2>First Wedding 💒</h2>
+            <p>Looking adorable in my little outfit!</p>
+        </div>
+        <div class="card" id="event9">
+            <img src="img/airplane.jpeg" alt="First Time on Airplane">
+            <h2>First Time on Airplane ✈️</h2>
+            <p>Flying high and loving every moment!</p>
+        </div>
+        <div class="card" id="event10">
+            <img src="img/selfie.jpeg" alt="First Clicking Selfie">
+            <h2>First Clicking Selfie 🤳</h2>
+            <p>Say cheese! My selfie game is strong.</p>
+        </div>
+        <div class="card" id="event11">
+            <img src="img/book.jpeg" alt="Reading Book">
+            <h2>Reading Book 📚</h2>
+            <p>Exploring stories and learning new things.</p>
+        </div>
+        <div class="card" id="event12">
+            <img src="img/hair.jpeg" alt="Wearing Hairband">
+            <h2>Wearing Hairband 🎀</h2>
+            <p>Rocking the cutest accessories ever!</p>
+        </div>
+        <div class="card" id="event13">
+            <img src="img/lavendar.jpeg" alt="Lavender Dress">
+            <h2>Lavender Dress 💜</h2>
+            <p>Looking like a princess in my favorite dress.</p>
+        </div>
+    </div>
+    <div class="final-section">
+        <img src="img/end.jpeg" alt="WE LOVE YOU">
+        <h2>WE LOVE YOU BABY SISTER 💕</h2>
+        <p>You are the light of our lives, Sitara!</p>
+    </div>
+    <footer>
+        <p>Made with love ❤️ for Sitara!</p>
+    </footer>
+</body>
+</html>
